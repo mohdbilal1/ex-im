@@ -1,0 +1,11 @@
+
+.about-div{
+    padding: 90px 20px 20px 60px;
+}
+.content-div{
+    padding: 20px 60px;
+}
+.content-div h5{
+ color: maroon;  
+ font-weight: bold; 
+}

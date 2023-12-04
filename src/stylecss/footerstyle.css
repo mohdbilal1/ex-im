@@ -1,0 +1,23 @@
+
+.footer-list{
+    font-size:18px;
+    margin-top: 15px;
+    list-style: none;
+    align-items: center;
+}
+.footer-list a{
+    text-decoration: none;
+    color: white;
+    padding: 3px 25px;
+
+}
+.footer-div{
+    background-color: rgb(25, 32, 46);
+    
+}
+.footer-end{
+    background-color: rgb(25, 32, 46);
+    color: white;
+    padding: 15px 0;
+    font-size: small;
+}

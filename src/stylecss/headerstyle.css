@@ -1,0 +1,37 @@
+
+.nav-list{
+    font-size:18px;
+    margin-top: 15px;
+    align-items: center;
+}
+.nav-list a{
+    text-decoration: none;
+    color: crimson;
+    padding: 3px 20px;
+    font-size:18px;
+}
+
+.logo-img-div{
+    margin-left: 40px;
+    margin-right: 200px;
+}
+
+@media screen and (max-width:1154px) {
+    .nav-list{
+        font-size:15px;  
+    }
+    .nav-list a{
+        padding: 3px 10px;
+    }
+    .nav-list-btn{
+        padding: 2px 6px;
+    }
+    
+   
+}
+@media screen and (max-width:800px) {
+    .logo-img-div{
+        margin-right: 60px;
+    }
+}
+

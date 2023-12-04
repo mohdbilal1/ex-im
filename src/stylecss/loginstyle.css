@@ -1,0 +1,13 @@
+.logo-sec{
+    background:white;
+    width: 210px;
+    border-radius: 15px;
+    padding: 22px 30px;
+}
+.login-left h1{
+    padding: 25px 0;
+    line-height: 60px;
+}
+.login-main-div{
+    background-image: url('../images/login-bg.jpg');
+}
