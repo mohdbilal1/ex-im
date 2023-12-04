@@ -18,7 +18,7 @@ export const Home = () => {
         <> 
             <Navbar />
             <div className="main-div">
-                <div style={{ display: 'flex', flexWrap: 'wrap', marginBottom: '10px' }}>
+                <div style={{ display: 'flex', flexWrap: 'wrap', marginBottom: '10px',justifyContent:"space-evenly" }}>
                     <div className="col-sm-6" style={{ padding: '40px' }}>
                         <Typography style={{ fontSize: '45px', fontWeight: "bold" }}>The EX-IM Edge</Typography>
                         <Typography sx={{ color: 'crimson', fontSize: '32px', fontWeight: "bold" }}>Experience The AI-Powered Superengine</Typography>
@@ -35,11 +35,11 @@ export const Home = () => {
                         </a>
                     </div>
                     <div className="col-sm-6 pt-5">
-                        <img style={{width:'580px',height:'auto'}} src={img} alt="home-img" />
+                        <img style={{width:'580px',height:'auto',objectFit:'cover'}} src={img} alt="home-img" />
                     </div>
                 </div>
                 <div style={{ padding: '40px' }} className="sec_div_content d-flex flex-wrap mt-5">
-                    <div className="col-sm-6">
+                    <div className="col-sm-5">
                         <img src={img2} alt="home-img" />
                     </div>
                     <div className=" col-sm-6">
@@ -95,10 +95,10 @@ export const Home = () => {
                         <img src={ultimateImg} alt="ultimate-img" />
                     </div>
                 </div>
-                <div className="mt-5" style={{ padding: '40px' }}>
+                <div className="mt-5" style={{ padding: '40px',backgroundColor:'#f3f5ff' }}>
                     <h1 style={{ paddingBottom: '10px', fontWeight: 'bolder', fontSize: '30px',color: 'crimson' }}>Features</h1>
                     <h5>Making technology, information, and actionable intelligence work better for your EXIM business.</h5>
-                    <div className=" d-flex mt-4 ">
+                    <div className=" d-flex mt-4 justify-content-evenly ">
                         <div className=" me-4  bg-light">
                             <img src={feateureImg1} alt="feateure-Img1" />
                         </div>
@@ -109,7 +109,7 @@ export const Home = () => {
                             <img src={feateureImg3} alt="feateure-Img1" />
                         </div>
                     </div>
-                    <div className=" d-flex mb-5 ">
+                    <div className=" d-flex mb-5 justify-content-evenly  ">
                         <div className="  me-4 p-4 pt-5  bg-light ">
                             <h1 style={{  fontWeight: 'bolder', fontSize: '30px',color: 'crimson' }}>Smart Dashboard</h1>
                             <p style={{textAlign: 'justify',paddingTop:'5px'}}>It’s a smart dashboard for our ever-growing circle of the smartest clientele on planet Earth.</p>

@@ -83,14 +83,14 @@ const Navbar = ({ clickbtn2 }) => {
             }}
             >
 
-                <Box sx={{ display: 'flex', pt: 2, pb: 2 }}>
+                <Box sx={{ display: 'flex', pt: 2, pb: 2,justifyContent:'space-between' }}>
                     <div className='logo-img-div pt-2 pb-2'>
                         <a href="/">
                             <img src={imgeLogo} alt="logo-img" />
                         </a>
                     </div>
-                    <Box  sx={{ display: { xs: 'none', sm: 'block' } }}>
-                        <List sx={{display:'flex'}}>
+                    <Box  sx={{ display: { xs: 'none', sm: 'block'},mr:'100px' }}>
+                        <List sx={{display:'flex',justifyContent:'space-evenly'}}>
 
                             <li className='nav-list'>
                                 <NavLink to='/'>Home</NavLink>

@@ -8,7 +8,7 @@ const Login = () => {
     return (
         <>
 
-            <div className='login-main-div' style={{width:'100%',height:"600px"}}>
+            <div className='login-main-div' style={{width:'100%',height:"100vh"}}>
                 
                 <div style={{ display: "flex",paddingTop:'120px',paddingLeft:'80px',color:'white' }}>
                     <div className="col-md-6 me-5">

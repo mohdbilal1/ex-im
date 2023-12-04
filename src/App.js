@@ -10,6 +10,7 @@ import Login from './Components/Login';
 import PrivacyAndPolicy from './Components/PrivacyAndPolicy';
 import Disclaimer from './Components/Disclaimer';
 import TermAndCondition from './Components/TermAndCondition';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

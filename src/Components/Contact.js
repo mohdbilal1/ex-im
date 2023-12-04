@@ -75,14 +75,14 @@ const Contact = () => {
                                 })}
 
                             </Select>
-                            <div>
+                            <div className=" d-flex ">
                                 <button style={{
                                     width: '60px', height: '56px', borderRadius: '5px 0px 0px 5px', border: 'none',
                                     padding: '8px', backgroundColor: 'crimson', color: 'white', fontSize: '12px'
                                 }}
                                 ><AddIcon />{country}</button>
                                 <TextField type="number" label="Phone number" variant="outlined" 
-                                sx={{ mb: 3, bgcolor: 'white' ,minWidth:'346px' }} required />
+                                sx={{ mb: 3, bgcolor: 'white' ,minWidth:'346px' }} required fullWidth />
 
                             </div>
                             <TextField type="email" label="Email" variant="outlined" sx={{ mb: 3, bgcolor: 'white' }} required />
