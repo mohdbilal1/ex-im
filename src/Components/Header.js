@@ -8,8 +8,6 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 
 
-
-
 const Navbar = ({ clickbtn2 }) => {
     const [openDrawer, setOpenDrawer] = useState(false);
 
@@ -21,24 +19,26 @@ const Navbar = ({ clickbtn2 }) => {
     const drawer = () => {
         return (
             <>
-                <AppBar onClick={openHandle} sx={{ bgcolor: 'white',width:'100%',pl:5 ,height:'25%'}} >
-                    
+                <AppBar onClick={openHandle} sx={{ bgcolor: 'white', width: '100%', pl: 5, height: '25%' }} >
+
                     <div className=' d-flex'>
-                    <div className='pt-2 pb-2'>
-                        <a href="/">
-                            <img src={imgeLogo} alt="logo-img" />
-                        </a>
-                    </div>
-                    <IconButton
-                    sx={{ mb: 1,color:'white',position:'relative',left:200,bgcolor:'crimson',p:1 ,height:'30px'
-                    ,display: { sm: 'none' }, borderRadius:1,mt:3}}
-                    aria-label="open drawer"
-                    size="large"
-                    onClick={openHandle}
-                    
-                >
-                    <MenuIcon />
-                </IconButton>
+                        <div className='pt-2 pb-2'>
+                            <a href="/">
+                                <img src={imgeLogo} alt="logo-img" />
+                            </a>
+                        </div>
+                        <IconButton
+                            sx={{
+                                mb: 1, color: 'white', position: 'relative', left: 200, bgcolor: 'crimson', p: 1, height: '30px'
+                                , display: { sm: 'none' }, borderRadius: 1, mt: 3
+                            }}
+                            aria-label="open drawer"
+                            size="large"
+                            onClick={openHandle}
+
+                        >
+                            <MenuIcon />
+                        </IconButton>
                     </div>
                     <List >
 
@@ -63,7 +63,7 @@ const Navbar = ({ clickbtn2 }) => {
                         <li>
                             <a href='/login' className='nav-list-btn'>
                                 <Button variant='contained'
-                                    sx={{ padding: '6px 20px', mt: 1.5, bgcolor: 'crimson',width:'25%' }}
+                                    sx={{ padding: '6px 20px', mt: 1.5, bgcolor: 'crimson', width: '25%' }}
                                 >
                                     Login
                                 </Button>
@@ -83,14 +83,14 @@ const Navbar = ({ clickbtn2 }) => {
             }}
             >
 
-                <Box sx={{ display: 'flex', pt: 2, pb: 2,justifyContent:'space-between' }}>
+                <Box sx={{ display: 'flex', pt: 2, pb: 2, justifyContent: 'space-between' }}>
                     <div className='logo-img-div pt-2 pb-2'>
                         <a href="/">
                             <img src={imgeLogo} alt="logo-img" />
                         </a>
                     </div>
-                    <Box  sx={{ display: { xs: 'none', sm: 'block'},mr:'100px' }}>
-                        <List sx={{display:'flex',justifyContent:'space-evenly'}}>
+                    <Box sx={{ display: { xs: 'none', sm: 'block' }, mr: '100px' }}>
+                        <List sx={{ display: 'flex', justifyContent: 'space-evenly' }}>
 
                             <li className='nav-list'>
                                 <NavLink to='/'>Home</NavLink>
@@ -122,17 +122,19 @@ const Navbar = ({ clickbtn2 }) => {
                         </List>
                     </Box>
                     <IconButton
-                    sx={{ mb: 1,color:'white',position:'relative',left:100 ,bgcolor:'crimson',p:1 ,height:'30px'
-                    ,display: { sm: 'none' }, borderRadius:1,mt:3 }}
-                    aria-label="open drawer"
-                    size="large"
-                    onClick={openHandle}
-                    
-                >
-                    <MenuIcon />
-                </IconButton>
+                        sx={{
+                            mb: 1, color: 'white', position: 'relative', left: 100, bgcolor: 'crimson', p: 1, height: '30px'
+                            , display: { sm: 'none' }, borderRadius: 1, mt: 3
+                        }}
+                        aria-label="open drawer"
+                        size="large"
+                        onClick={openHandle}
+
+                    >
+                        <MenuIcon />
+                    </IconButton>
                 </Box>
-               
+
 
             </AppBar>
             <Box>
@@ -144,7 +146,8 @@ const Navbar = ({ clickbtn2 }) => {
                     {drawer()}
                 </Drawer>
             </Box>
-            
+           
+
 
         </>
     )
