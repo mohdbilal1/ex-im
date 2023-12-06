@@ -1,5 +1,5 @@
 import { AppBar, Box, Button, Drawer, IconButton, List } from '@mui/material'
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import '../stylecss/headerstyle.css'
 import imgeLogo from '../images/logo-1.png'
 import { useState } from 'react';
@@ -61,13 +61,13 @@ const Navbar = ({ clickbtn2 }) => {
                             <NavLink to='/Contact'>Contact Us</NavLink>
                         </li>
                         <li>
-                            <a href='/login' className='nav-list-btn'>
+                            <Link to='/login' className='nav-list-btn'>
                                 <Button variant='contained'
                                     sx={{ padding: '6px 20px', mt: 1.5, bgcolor: 'crimson', width: '25%' }}
                                 >
                                     Login
                                 </Button>
-                            </a>
+                            </Link>
                         </li>
                     </List>
                 </AppBar>
